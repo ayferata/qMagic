@@ -8,7 +8,8 @@ public QMatic() { this.orderNo = 0; 	}
 // Critical section for all threads! this.orderNo = this.orderNo + 1; 		
 StringBuilder builder = new StringBuilder(); 		
 builder.append(Thread.currentThread().getName());
-builder.append(" thread got "); builder.append(this.orderNo); builder.append(" from Qmatic!"); 
+builder.append(" thread got "); 
+builder.append(this.orderNo); builder.append(" from Qmatic!"); 
 		System.out.println(builder.toString());
 	}
 }
